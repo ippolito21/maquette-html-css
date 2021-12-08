@@ -35,16 +35,18 @@ nav li {
 
 #banner{
     position: relative;
+    height: 450px;
 }
 
 #banner-img {
+    position: absolute;
     width: 100%;
-    height: 450px;
+    height: 100%; 
     object-fit: cover;
 }
 #banner-content {
     position: absolute;
-    top: 0;
+    margin-top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,6 +56,7 @@ nav li {
 }
 #banner-content img {
     height: 60px;
+    width: 200px;
 }
 
 #banner-content h1 {
@@ -68,42 +71,85 @@ nav li {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+    /* text-align: center; */
+}
+#presentation-description, #presentation-information {
+    margin: 30px 0;
+    max-width: 800px;
+    /* display: flex; */
+}
+
+
+#presentation-description p {
+    color: rgb(87, 87,87);
+    font-size: 17px;
     text-align: center;
 }
-#presentation-description {
-    margin: 30px 0;
-    max-width: 700px;
-}
-#information {
-    max-width: 700px;
+
+
+#presentation-information {
     display: flex;
+    justify-content: space-around;
 }
-#information article {
-    padding: 10px;
+
+#presentation-information article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
 }
-#information h2 {
+ #presentation-information h2 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
 
 }
-#information p {
-    font-size: 12px;
+#presentation-information p {
+    font-size: 12px; 
+    text-align: center;
 }
 #quote {
     max-width: 600px;
-    margin-top: 40px;
+    margin-top: 50px;
+
 }
+
+#quote-content {
+    font-size: 14px;
+}
+
+#quote-author {
+    font-weight: 300;
+}
+
 
 /* footer */
 
 footer{
 background: #5b359d;
 color: white;
-display: flex;
+  display: flex;
 flex-direction:column;
 align-items: center;
+  
+
+}
+
+
+
+#copyright {
+	color: white;
+	text-align: center;
+	font-size: 0.5em;
+	font-weight: 400;
+}
+
+#footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 footer h2{
@@ -124,6 +170,7 @@ footer h2{
 }
 .footer-item h3 {
     font-size: 14px;
+    margin-top: 30px;
     font-weight: 400;
     opacity: 0.6;
 
