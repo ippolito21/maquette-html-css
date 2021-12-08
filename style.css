@@ -5,19 +5,30 @@ body {
 
 /* header */
 
-nav {
+#container {
+    width: 100%;
+    max-width: 1200px;
+}
+header {
     display: flex;
     justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 nav img {
     height: 80px;
 }
 nav ul {
     display: flex;
-    list-style: none;
+    
 }
 nav li {
-    margin: 0 10px 0 20px; 
+    list-style: none;
+    padding-left: 30px;
+    /* margin: 0 10px 0 20px;  */
 }
 
 /* main */
